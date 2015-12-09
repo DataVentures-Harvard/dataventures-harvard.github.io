@@ -83,8 +83,8 @@ Number.prototype.clamp = function(min, max) {
             _this._flag = true;
             _this.angle = angle;
             _this._rotvel = ROTATIONAL_VELOCITY + 0.1 * (2*Math.random() - 1);
-            _this._r1 = 25 + Math.random()*(size < 400 ? 400 : size);
-            _this._r2 = 25 + Math.random()*(size < 400 ? 400 : size);
+            _this._r1 = 100 + Math.random()*(size < 400 ? 400 : size)/2;
+            _this._r2 = 100 + Math.random()*(size < 400 ? 400 : size)/2;
             _this._r1_vel = 0*(size < 400 ? 400 : size)*VELOCITY_FACTOR;
             _this._r2_vel = 0*(size < 400 ? 400 : size)*VELOCITY_FACTOR;
             _this._r1_accel = 1;
@@ -105,13 +105,13 @@ Number.prototype.clamp = function(min, max) {
             ctx.beginPath();
             ctx.moveTo(x1, y1);
             ctx.lineTo(x2, y2);
-            ctx.strokeStyle = 'rgba(255, 255, 255,'+(0.5+Math.random()*0.5)+')';
+            ctx.strokeStyle = 'rgba(255, 255, 255,'+(0.5+Math.random()*0.2)+')';
 
             ctx.stroke();
 
             ctx.beginPath();
             ctx.arc(x1, y1, 2, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(255,255,255,'+(0.5+Math.random()*0.5)+')';
+            ctx.fillStyle = 'rgba(255,255,255,'+(0.5+Math.random()*0.2)+')';
             ctx.fill();
 
             _this.angle += _this._rotvel;
