@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Data Ventures</title>
+		<link>http://localhost:4000</link>
+		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>How to Install Scientific Python</title>
+        <description>&lt;p&gt;Up until now we’ve been using our public Jupyterhub instance. However, as we move one it’ll be vital that you have access to a Python environment of your own in order to play around, write code, and submit results. Unfortunately, the process of installing Python can be a huge pain, unless you use the &lt;a href=&quot;https://www.continuum.io/downloads&quot;&gt;Anaconda&lt;/a&gt; Python distribution.&lt;/p&gt;
+
+&lt;h4 id=&quot;instructions&quot;&gt;Instructions&lt;/h4&gt;
+&lt;p&gt;So here are the steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click &lt;a href=&quot;https://www.continuum.io/downloads&quot;&gt;here&lt;/a&gt; to download and install Anaconda.&lt;/li&gt;
+  &lt;li&gt;Run the following code in your terminal:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda update conda
+conda update ipython
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;ipython notebook&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;If necessary, go to the URL &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8888/&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+				<pubDate>Thu, 13 Oct 2016 00:00:00 -0400</pubDate>
+				<link>http://localhost:4000/2016-10-13/how-to-install-scientific-python/</link>
+				<guid isPermaLink="true">http://localhost:4000/2016-10-13/how-to-install-scientific-python/</guid>
+			</item>
+		
+			<item>
+				<title>Workshops Weeks 0 + 1</title>
+        <description>&lt;h3 id=&quot;quick-aside&quot;&gt;quick aside&lt;/h3&gt;
+
+&lt;p&gt;If you don’t know what the Data Ventures workshops are, you can learn a little more &lt;a href=&quot;/about/&quot;&gt;here&lt;/a&gt;. Basically, the workshops are the program that our trainees go through to become full fledged Data Ventures members, or Fellows.&lt;/p&gt;
+
+&lt;h3 id=&quot;week-0&quot;&gt;Week 0&lt;/h3&gt;
+
+&lt;p&gt;In Week 0, we covered the basics of Python, along with the most useful Python tools, like Pandas. You can find the relevant material &lt;a href=&quot;https://github.com/dataventures/workshops/tree/master/0&quot;&gt;here&lt;/a&gt;. Start with &lt;a href=&quot;https://github.com/dataventures/workshops/blob/master/0/Intro.ipynb&quot;&gt;Intro&lt;/a&gt;, though you’ll want to download all of the Jupyter notebooks so that you can run the code samples.&lt;/p&gt;
+
+&lt;h5 id=&quot;snafu&quot;&gt;snafu&lt;/h5&gt;
+&lt;p&gt;Unfortunately, due to a miscommunication, some of the code (the introductory material) is written using Python 3, and thelater material (Pandas) is written using Python 2. Please use Python 2 for now (there shouldn’t be any major differences for the work you’ll be doing right now, though occasionally we’ll come across unicode gotchas).&lt;/p&gt;
+
+&lt;h3 id=&quot;week-1&quot;&gt;Week 1&lt;/h3&gt;
+
+&lt;p&gt;In Week 1, we covered the beginnings of the basics of &lt;strong&gt;supervised learning&lt;/strong&gt;, including the train-test-validation split, how to measure error, and covered simple linear models. You can access the material &lt;a href=&quot;https://github.com/dataventures/workshops/tree/master/1&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;homework&quot;&gt;homework&lt;/h5&gt;
+
+&lt;p&gt;For Week 1, there’s a simple homework assignment: given the set of (x, y) pairs in &lt;a href=&quot;https://github.com/dataventures/workshops/blob/master/1/dataset_4_full.txt&quot;&gt;this&lt;/a&gt; file, create a Jupyter notebook that:
+1. splits the file into train and validation sets
+2. builds a linear model of the data, minimizing validation error&lt;/p&gt;
+
+&lt;p&gt;Note that while the model itself should be linear, the &lt;strong&gt;features&lt;/strong&gt; that the model uses doesn’t necessarily have to be linear. Assume that the assumptions of linear least-squares models are valid for this dataset.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 12 Oct 2016 00:00:00 -0400</pubDate>
+				<link>http://localhost:4000/2016-10-12/weeks-zero-and-one/</link>
+				<guid isPermaLink="true">http://localhost:4000/2016-10-12/weeks-zero-and-one/</guid>
+			</item>
+		
+	</channel>
+</rss>
